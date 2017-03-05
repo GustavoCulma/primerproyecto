@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Psicodelico</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/es.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	 -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+	<nav class="navbar navbar-default navbar-fixed-top ">
+		<div class="container-fluid" >
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" href="#imagenes">Inicio</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#imagenes">IMAGENES</a></li>
+					<li><a href="#informacion">INFORMACIÓN</a></li>
+					<li><a href="#tour">TOUR</a></li>
+					<li><a href="#contacto">CONTACTO</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">MÁS<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Mercancías</a></li>
+							<li><a href="#">Extras</a></li>
+							<li><a href="#">Media</a></li> 
+						</ul>
+					</li>
+					<li><a href="#ubicacion"><span class="glyphicon glyphicon-search">UBICACIÓN</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+	<div id="imagenes">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- estos son los indicadores del carrusel -->
+			<!-- <ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol> -->
+			<!-- dentro del primer div con clase carousel-inner van tres divs mas  con la item  que es donde van las imagenes  y dentro de ellas va  otro div con la clase carousel-caption  que es para agregar un titlo a cada imagen -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="imagenes/once.jpg" alt="New York">
+					<div class="carousel-caption">
+						<h3>New York</h3>
+						<p>The atmosphere in New York is lorem ipsum.</p>
+					</div> 
+				</div>
+				<div class="item">
+					<img src="imagenes/doce.jpg" alt="Chicago">
+					<div class="carousel-caption">
+						<h3>Chicago</h3>
+						<p>Thank you, Chicago - A night we won't forget.</p>
+					</div> 
+				</div>
+				<div class="item">
+					<img src="imagenes/nueve.jpg" alt="Los Angeles">
+					<div class="carousel-caption">
+						<h3>LA</h3>
+						<p>Even though the traffic was a mess, we had the best time.</p>
+					</div> 
+				</div>
+			</div>
+			<!-- estos son los controles  izquierdo  y derecho  -->
+			<!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a> -->
+		</div>
+	</div>
+
+
+
+
+
+	<!-- un div con la clase  container text-center para que el texto este centrado  -->
+	<div id="informacion" class="container text-center" >
+		<div class="color">
+			<h3>INFORMACIÓN</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo dignissimos harum quaerat non neque aspernatur necessitatibus aliquid quisquam ea eveniet! Velit voluptatibus est soluta eius, iusto facere esse reiciendis magni. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem perferendis praesentium aliquam blanditiis debitis nam, nihil voluptas atque fuga voluptates modi fugit explicabo, architecto odio? Officia obcaecati earum ipsum commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur maxime quod recusandae enim expedita, officiis dignissimos voluptatibus assumenda praesentium, quidem fuga animi aspernatur quaerat eos. Omnis et dolorum corporis modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aspernatur placeat totam aliquid provident maxime dolorem quod quaerat quam, dolor adipisci voluptate ducimus voluptatum ea et. Facilis id possimus placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ut obcaecati atque doloremque voluptatum consectetur maiores repellat quaerat accusamus iusto, eos deleniti, sed. Molestiae itaque quo repellat maiores animi, consequuntur.</p>
+		</div>
+		otro div con la clase "row" y dentro de ese div  otros 3 divs con la clase"col-sm-4" y dentro de ellos  una etiqueta (a) para hacer la imagen plegable   con un dato collapse y por fuera de esa etiqueta (a) otro div con la clase collapse que se conecta con el dato de la etiqueta a  las  imagenes  llevan la clase  img-circle person  que sirve  para  dar alas  imagenes  un aspecto redondo   y  la clase person  para  agregar un efecto   y un borde
+		<div class="row">
+			<div class="col-sm-4">
+				<p class="text-center"><strong>Imagen 1</strong></p><br>
+				<a href="#demo" data-toggle="collapse">
+					<img src="imagenes/1.jpg" class="img-circle person" alt="Random Name">
+				</a>
+				<div id="demo" class="collapse">
+					<p>Calaveras</p>
+					<p>colores</p>
+					<p>psicodelicos</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<p class="text-center"><strong>Imagen 2</strong></p><br>
+				<a href="#demo2" data-toggle="collapse">
+					<img src="imagenes/12.jpg" class="img-circle person" alt="Random Name">
+				</a>
+				<div id="demo2" class="collapse">
+					<p>Ojos</p>
+					<p>Bicicleta</p>
+					<p>psicodelicos</p>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<p class="text-center"><strong>Imagen 3</strong></p><br>
+				<a href="#demo3" data-toggle="collapse">
+					<img src="imagenes/2.jpg" class="img-circle person" alt="Random Name">
+				</a>
+				<div id="demo3" class="collapse">
+					<p>Meditacion</p>
+					<p>manos</p>
+					<p>psicodelico</p>
+				</div>	
+			</div>
+		</div>
+	</div>		
+
+
+
+
+
+	<!-- un div con la clase bg para darle color -->
+	<div id="tour" class="bg-1" >
+		<div class="container">
+			<h3 class="text-center">FECHAS DE TOUR</h3>
+			<p class="text-center">Lorem ipsum we'll play you some music.<br> ¡Recuerde reservar sus entradas!</p>
+			<ul class="list-group">
+				<li class="list-group-item">Septiembre ¡Vendido hacia fuera! <span class="label label-danger">Agotado!</span></li>
+				<li class="list-group-item">Octubre ¡Vendido hacia fuera <span class="label label-danger">Agotado!</span></li> 
+				<li class="list-group-item">Noviembre<span class="badge">3</span></li> 
+			</ul>
+			<div class="row text-center">
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="imagenes/3.jpg" alt="Paris">
+						<p><strong>IMAGEN1</strong></p>
+						<p>Fri. 27 November 2015</p>
+						<button class="btn" data-toggle="modal" data-target="#myModal" >COMPRAR</button>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="imagenes/4.jpg" alt="New York">
+						<p><strong>IMAGEN2</strong></p>
+						<p>Sat. 28 November 2015</p>
+						<button class="btn" data-toggle="modal" data-target="#myModal" >COMPRAR</button>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="thumbnail">
+						<img src="imagenes/5.jpg" alt="San Francisco">
+						<p><strong>IMAGEN3</strong></p>
+						<p>Sun. 29 November 2015</p>
+						<button class="btn" data-toggle="modal" data-target="#myModal" >COMPRAR</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ <!-- Se utiliza para abrir el Modal -->
+
+<!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4><span class="glyphicon glyphicon-lock"></span> Comprar</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span>Cantidad</label>
+            <input type="number" class="form-control" id="psw" placeholder="¿Cuántos?
+">
+          </div>
+          <div class="form-group">
+            <label for="usrname"><span class="glyphicon glyphicon-user"></span>Enviar a</label>
+            <input type="text" class="form-control" id="usrname" placeholder="Ingrese correo electrónico">
+          </div>
+          <button type="submit" class="btn btn-block">Paga
+            <span class="glyphicon glyphicon-ok"></span>
+          </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+          <span class="glyphicon glyphicon-remove"></span> Cancelar
+        </button>
+        <p>Necesitas <a href="#">ayuda?</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="contacto"  class="container">
+  <h3 class="text-center">Contacto</h3>
+  <p class="text-center"><em>¡Amamos a nuestros fans!</em></p>
+  <div class="row test">
+    <div class="col-md-4">
+      <p>Notas</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>BOGOTA,COLOMBIA</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Tel:3133927038</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: gustavoculma@hotmail.com</p> 
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comentarios" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Enviar</button>
+        </div>
+      </div> 
+    </div>
+ </div>
+<h3 class="text-center">Desde el blog</h3> 
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Imformacion1</a></li>
+  <li><a data-toggle="tab" href="#menu1">informacion2</a></li>
+  <li><a data-toggle="tab" href="#menu2">informacion3</a></li>
+</ul>
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h2>Gustavo Adolfo Culma, Manager</h2>
+    <p>Hombre, hemos estado en el camino por algún tiempo ahora. deseo ser el mejor.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h2>Gustavo Culma, Guitarista</h2>
+    <p>Siempre es un placer gente! Espero que lo hallan disfrutado tanto como yo. ¿Podría estar ... más complacido?</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h2>Adolfo Culma, Bajista	</h2>
+    <p>Quiero decir, a veces me gusta el espectáculo, pero otras veces me gusta otras cosas...</p>
+  </div>
+</div>
+</div>
+
+<div id="ubicacion">
+<div id="googleMap"></div>
+</div>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="GUSTAVO">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>bla bla <a href="#" data-toggle="tooltip" title="gustavo">bla blabla</a></p> 
+</footer>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mapa.js"></script>	
+<script src="js/pie.js"></script>
+</body>
+</html>

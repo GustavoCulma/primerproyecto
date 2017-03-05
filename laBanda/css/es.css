@@ -1,0 +1,234 @@
+/* body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+}
+Overwrite default styles of h3 and h4
+h3, h4 {
+    margin: 1px 0 3px 0;
+    letter-spacing: 10px; 
+    font-size: 20px;
+    color: #111;
+}
+
+Remove rounded borders on input fields
+.form-control {
+    border-radius: 0;
+}
+
+Disable the ability to resize textareas
+textarea {
+    resize: none;
+} */
+
+
+
+.container-fluid{
+    background-color: #2D0816;
+}
+
+/*Añade un color de fondo oscuro con un poco de transparencia*/
+.navbar {
+    margin-bottom:0;
+    /*background-color: #2D0816;*/
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity:0.89;
+}
+/*Añade un color  a todos los enlaces de navegación*/
+.navbar li a, .navbar .navbar-brand { 
+    color:#fff !important;
+}
+/* En hover, los enlaces se volverán blancos */
+.navbar-nav li a:hover {
+    color: black !important;
+}
+/* El enlace activo */
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color:#2D0816 !important;
+}
+/* Eliminar el color del borde del botón plegable */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    background-color: #DFC023;
+}
+
+
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #DFC023 !important;
+}
+/* Enlaces desplegables */
+.dropdown-menu li a {
+    color:#fff !important;
+}
+/* En reposo, los enlaces desplegables se volverán amarillos */
+.dropdown-menu li a:hover {
+    background-color: #DFC023 !important;
+}
+
+
+
+
+
+/*importante para que el carrusel quede bien*/
+.carousel-inner img{
+    /*carrusel*/
+    /*-webkit-filter: grayscale(90%);*/
+    /*filter: grayscale(90%);  hacer todas las fotos en blanco y negro */
+    width: 200%; /* ajusta el ancho al 100% */
+    margin: auto;
+}
+.carousel-caption h3 {
+    color:  #8E415D  !important;
+}
+.carousel-caption p {
+    color: #D5EEEE;
+}
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Ocultar el texto del carrusel cuando la pantalla tiene menos de 600 píxeles de ancho
+        */
+    }
+}
+
+
+
+
+
+/*para que la  clase  container  tenga un margen de los lados de   120 pixeles y  de arriba de  y abajo de 80*/
+.container{
+	padding: 80px 120px; 
+}
+.container h3 {
+	color: #F70C62;
+}
+.person{
+	border: 10px solid transparent;
+	margin-bottom: 25px;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7%;
+}
+.person:hover {
+	border-color:#E4E4EE;
+}   
+.col-sm-4{
+    background: #2D0816;
+}
+.collapse{
+  background: #2D0816;
+  color: #fff;
+}
+/*tour*/
+.bg-1 {
+    background: #2D0816;
+    color: #3C1F03;
+}
+.bg-1 h3 {
+    color: #fff;
+}
+.bg-1 p {
+    font-style: italic;
+    color: #fff;
+}
+
+
+
+
+
+/* Eliminar los bordes redondeados de la lista */
+.list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/* Quite el borde y añada el relleno a las miniaturas */
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+.thumbnail p {
+    margin-top: 15px;
+    color: #2D0816;
+}
+/* Botones negros con relleno extra y sin bordes redondeados */
+.btn {
+    padding: 10px 20px;
+    background: #2D0816;
+    color: #fff;
+    border-radius: 0;
+    transition: .2s;
+}
+
+
+
+
+/* En hover, el color de .btn pasará al blanco con texto negro */
+.btn:hover, .btn:focus {
+    /*border: .5px solid #DFC023;*/
+    background-color: #DFC023;
+    color:#fff;
+}
+
+
+
+
+/* Añade un color de fondo  al encabezado modal y al texto central */
+
+.modal-header, h4, .close {
+    background-color: #2D0816;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}
+
+
+
+
+.nav-tabs li a {
+    color: #F70C62;
+}
+
+
+#googleMap {
+    width: 100%; /* Alcance todo el ancho de la pantalla */
+
+    height: 400px; /* Establece la altura a 400 píxeles */
+
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); Cambiar el color del mapa a blanco y negro
+     */
+}
+
+
+
+
+
+footer {
+    background-color: #2D0816;
+    color: #fff;
+    padding: 32px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
